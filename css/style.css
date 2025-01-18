@@ -3,6 +3,8 @@
     padding: 0;
 }
 /*   font-family: "Work Sans", serif; */
+
+/* shared styled code add here*/
 :root{
     --primary-color:rgb(19, 19, 19);
     --secondary-color:rgb(66, 66, 66);
@@ -10,6 +12,203 @@
     --btn-color:rgb(255, 255, 255);
     --btn-background:
     rgb(255, 144, 14);
-    --background: rgba(255, 144, 14, 0.1);
-    --primary-font: "Work Sans", serif;
+    --background: rgba(255, 144, 14, 0.1);  
+}
+.work-sans-font {
+    font-family: "Work Sans", serif;
+  }
+.display-flex{
+    display: flex;
+  }
+
+  .bg-color{
+    background: rgba(255, 144, 14, 0.1); 
+  }
+  .navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* shared styled code end here*/
+
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+}
+
+/* ------------------------------------------
+-----------------------------------------------
+        header section css add here 
+---------------------------------------------
+-------------------------------------------*/
+.header{
+
+}
+
+/* nav css start here */
+.nav-title{
+margin-top: 6.125rem;
+font-weight: bold;
+font-weight: 700;
+line-height: 53px;
+font-size: 45px;
+}
+.navbar{ 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:  7.35rem;
+}
+.navbar ul{
+    margin-top: 6.75rem;
+align-items: center;
+}
+.navbar ul li{
+    margin-right: 45px;  
+}
+.navbar ul li a{
+font-weight: 500;
+line-height: 26px;
+font-size: 18px; 
+color: var(--secondary-color);}
+/* nav css end here */
+.banner-body{
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;}
+.b-subtitle{
+    font-weight: 400;
+    font-size:1rem; 
+    line-height: 1.625rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+.banner-btn{  
+font-weight: 600;
+font-size:1.25rem ;    
+line-height: 1.438rem;
+color: var(--btn-color);
+padding: 1.313rem 1.5rem 1.25rem 1.563rem;
+background-color: var(--btn-background);
+border: none;
+border-radius: 0.5rem;
+margin-bottom: 3.125rem;
+}
+ .banner-img img{
+    width: 100%;
+} 
+/* ------------------------------------------
+-----------------------------------------------
+        header section css end here 
+---------------------------------------------
+-------------------------------------------*/
+
+
+/* team section css start here */
+.team-sec {
+    margin-top: 85px;
+    align-items: center; 
+}
+.left-img-sec{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    }
+
+.left-img-sec img{
+    width: 100%;
+}
+.right-img-title{
+margin-left: 73px;
+max-width: 537px;
+
+}
+.team-title{
+font-weight: 700;
+font-size:2.8rem;
+margin-bottom: 24px;
+}
+#title-1{
+    color: var(--third-color);
+}
+#title-2{
+color: var(--primary-color);
+}
+#title-3{
+    color: var(--btn-background);
+}
+.team-description{
+font-weight: 400;
+font-size: 1rem;
+line-height: 1.6rem;
+color: var(--third-color);
+margin-bottom: 32px;
+}
+/* team section css end here */
+
+/* feature section css start here */
+.feature-sec{
+
+}
+.feature-title{
+font-weight: 700;
+line-height: 53px;
+color: var(--primary-color);
+font-size: 2.8rem;
+margin-bottom: 24px;
+}
+.feature-description{
+    color: var(--third-color);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 26px;
+    Font: Work Sans
+}
+.f-card-title{
+    font-weight: 600;
+    line-height: 23px;
+    color: var(--primary-color);
+    line-height: 23px;
+    
+}
+.f-card-description{
+font-weight: 400;
+font-size: 1rem;
+line-height: 26px;
+color: var(--third-color);
+margin-top: 10px;
+}
+
+/* feature section css start here */
+/* ------------
+--------------
+responsive code
+---------------
+---------------- */
+@media screen and (max-width: 576px) {
+    .navbar, 
+    .navbar ul
+    {
+        flex-direction: column;
+    }
+    .team-sec{
+        flex-direction: column;
+    }
+    .left-img-sec{
+        grid-template-columns: 1fr;
+    }
+    .right-img-title{
+        margin-left: 111px;
+        margin-top: 15px;
+    }
+
+  
+    
 }
