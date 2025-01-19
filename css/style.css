@@ -155,7 +155,8 @@ margin-bottom: 32px;
 
 /* feature section css start here */
 .feature-sec{
-
+margin-top: 130px;
+gap: 140px;
 }
 .feature-title{
 font-weight: 700;
@@ -164,19 +165,21 @@ color: var(--primary-color);
 font-size: 2.8rem;
 margin-bottom: 24px;
 }
+#feature-border{
+    padding-left: 21px;
+    border-left: 5px solid var(--btn-background);
+}
 .feature-description{
     color: var(--third-color);
     font-weight: 400;
     font-size: 1rem;
     line-height: 26px;
-    Font: Work Sans
 }
 .f-card-title{
     font-weight: 600;
-    line-height: 23px;
+    font-size: 1.05rem;
     color: var(--primary-color);
-    line-height: 23px;
-    
+    line-height: 23px;  
 }
 .f-card-description{
 font-weight: 400;
@@ -185,8 +188,139 @@ line-height: 26px;
 color: var(--third-color);
 margin-top: 10px;
 }
+.feature-img img{
+    width: 100%;
+}
+
+.f-card{
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 30px 42px 30px 30px;
+    box-shadow:0 4px 30px 0 rgba(0, 0, 0, 0.06);   
+}
+#feature-btn{
+    margin-top: -77px;
+    margin-left: -92px;
+    font-weight: 600;  
+    line-height: 1.438rem;
+    color: var(--btn-color);
+    padding: 46px 42px 46px 42px;
+    background-color: var(--btn-background);
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 3.125rem;
+}
+#experience{
+    font-size: 4rem;
+    line-height: 70px;
+    padding-bottom: 5px;
+}
+#details{
+    font-size: 1.25rem;
+    line-height: 40px;
+}
 
 /* feature section css start here */
+.fac-sec{
+    margin-top: 130px;
+}
+.fact-title{
+font-size: 2.8rem;
+font-weight: bold;
+margin-bottom: 24px;
+}
+.fact-des{
+font-size: 1rem;
+line-height: 16px;
+font-weight: 400;
+color: var(--third-color);
+line-height: 26px;
+}
+.fact-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:124px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.fact-card{
+    text-align: center;
+    padding: 45px 36px;
+    border-radius: 8px;
+    border:1px solid rgba(255, 144, 14, 1);
+}
+.fact-card img{
+    margin-bottom:9px;
+}
+.fact-card-title{
+margin-bottom: 10px;
+font-size: 2.8rem;
+color: var(--primary-color);
+}
+.f-card-des{
+font-weight: 600;
+font-size: 1.05rem;
+color: var(--third-color);
+}
+
+/* company sec code start here */
+.company-sec{
+margin-top: 180px;
+}
+.company-des{
+width: 542px;
+height: 129px;
+text-align: center;
+margin: 0 auto;
+}
+.company-name{
+font-size: 2.8rem;
+font-weight: bold;
+color: var(--primary-color);
+text-align: center;
+margin-bottom: 24px;
+}
+.company-details{
+font-size: 1rem;
+line-height: 26px;
+font-weight: 400;
+color: var(--third-color);
+text-align: center;
+margin-bottom: 63px;
+}
+.company-img{
+    margin-top: 50px;
+display: grid;
+grid-template-columns: repeat(5,1fr);
+gap: 154px;
+}
+.company-img img{
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+/* company sec code end here */
+
+.footer-des{
+    margin-top: 130px;
+    background: var(--background);
+    
+    padding: 39px 410px;
+}
+.f-sec{
+    width: 620px;
+    height: 29px;
+    text-align: center;
+    margin: 0 auto;
+}
+.footer-title{
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--third-color);
+    
+}
 /* ------------
 --------------
 responsive code
@@ -209,6 +343,9 @@ responsive code
         margin-top: 15px;
     }
 
-  
+    .feature-body{
+        flex-direction: column;
+    }
+
     
 }
