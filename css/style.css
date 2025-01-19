@@ -376,7 +376,6 @@ responsive code
     }
 }
 /* tab or medium device */
-
 @media screen and (min-width: 576px) and (max-width: 992px) 
     {
         .navbar, 
@@ -410,5 +409,4 @@ responsive code
                 padding: 37px 0px;
                 margin: 7px auto;
             }
-    
   }
